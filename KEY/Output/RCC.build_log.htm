@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: fdf 2897804961@qq.com, gfg, LIC=GE7DY-I5PBR-17MRR-KVHLX-MA3NC-AZDJP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  D:\Keil_Arm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      CMSIS_AGDI.dll V1.21.12.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+D:\学习\嵌入式\野火F407开发板\学习代码\固件库\GPIO输入-按键检测\Project\RVMDK(uv5)\YH-F407.uvprojx
+Project File Date:  04/14/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'D:\Keil_Arm\ARM\ARMCC\Bin'
+Build target 'RCC'
+compiling bsp_clkconfig.c...
+..\..\User\RCC\bsp_clkconfig.c(50): error:  #20: identifier "PLL_M" is undefined
+      
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) |
+..\..\User\RCC\bsp_clkconfig.c(50): error:  #20: identifier "PLL_N" is undefined
+      
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) |
+..\..\User\RCC\bsp_clkconfig.c(50): error:  #20: identifier "PLL_P" is undefined
+      
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) |
+..\..\User\RCC\bsp_clkconfig.c(51): error:  #20: identifier "PLL_Q" is undefined
+                     (
+CC_PLLCFGR_PLLSRC_HSE) | (PLL_Q << 24);
+..\..\User\RCC\bsp_clkconfig.c(167): error:  #20: identifier "PLL_M" is undefined
+    
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) | (PLL_Q << 24); 
+..\..\User\RCC\bsp_clkconfig.c(167): error:  #20: identifier "PLL_N" is undefined
+    
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) | (PLL_Q << 24); 
+..\..\User\RCC\bsp_clkconfig.c(167): error:  #20: identifier "PLL_P" is undefined
+    
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) | (PLL_Q << 24); 
+..\..\User\RCC\bsp_clkconfig.c(167): error:  #20: identifier "PLL_Q" is undefined
+    
+CC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) | (PLL_Q << 24); 
+..\..\User\RCC\bsp_clkconfig.c(188): warning:  #1-D: last line of file ends without a newline
+    
+..\..\User\RCC\bsp_clkconfig.c(84): error:  #37: the #endif for this directive is missing
+  #if defined(USE_HSE_BYPASS) 
+..\..\User\RCC\bsp_clkconfig.c(5): error:  #37: the #endif for this directive is missing
+  #if defined(STM32F40_41xxx) || defined(STM32F427_437xx) || defined(STM32F429_439xx) || defined(STM32F401xx) || defined(STM32F412xG) || defined(STM32F413_423xx) || defined(STM32F446xx)|| defined(STM32F469_479xx)
+..\..\User\RCC\bsp_clkconfig.c(188): error: At end of source:  #67: expected a "}"
+..\..\User\RCC\bsp_clkconfig.c: 1 warning, 11 errors
+"..\..\Output\RCC.axf" - 11 Error(s), 1 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\学习\嵌入式\野火F407开发板\学习代码\固件库\GPIO输入-按键检测\Project\RVMDK(uv5)\RTE
+  D:\Keil_Arm\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
